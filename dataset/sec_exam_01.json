@@ -1,0 +1,70 @@
+[
+    {
+        "question": "What function can be used to convert a hash function into a MAC function? Select one from: MD5, SHA1, HMAC, Triple DES, RSA, None of the above",
+        "answer": "HMAC"
+    },
+    {
+        "question": "Assume a user had a 10-character password. Which would you consider the strongest against a dictionary attack? Select one from: a) Random characters, b) Combination of two English words, c) Pronounceable string (without dictionary words), d) Combination of names of people, e) Words with a mixture of upper and lower case characters, f) Words combined with numbers and special characters",
+        "answer": "a) Random characters"
+    },
+    {
+        "question": "If Transport Layer Security is used to secure data (e.g. web pages) between a client and server, TLS uses (select one from): a) Public key algorithms for data confidentiality and MD5 or SHA1 for data integrity, b) Symmetric key algorithms for key exchange and message authentication codes for authentication, c) Message authentication codes for data integrity and symmetric key algorithms for data confidentiality, d) Public key algorithms for key exchange and Diffie-Hellman for data integrity, e) None of the above",
+        "answer": "c) Message authentication codes for data integrity and symmetric key algorithms for data confidentiality"
+    },
+    {
+        "question": "Which technology is most appropriate to create a VPN? Select on from: a) TLS, b) IPsec, c) DDoS, d) SSH, e) RSA, f) None of the above",
+        "answer": "b) IPsec"
+    },
+    {
+        "question": "Software the replicates itself and sends the copies to other computers is best described as a (select one from): a) Logic bomb, b) Trojan horse, c) Rootkit, d) Exploit, e) Worm, f) Backdoor ",
+        "answer": "e) Worm"
+    },
+    {
+        "question": "A malicious user in a buffer overflow attack aims to (select one from): a) Overwrite the existing instruction pointer with malicious code, b) Overwrite the existing instruction pointer with NOP instructions, c) Overwrite the existing instruction pointer with a new instruction pointer, d) Overwrite the program stack with the malicious code, e) Overwrite the program stack with NOP instructions, f) Overwrite the program stack with a new instruction pointer",
+        "answer": "c) Overwrite the existing instruction pointer with a new instruction pointer"
+    },
+    {
+        "question": "What standard is used to describe digital certificates? Select one from: a) X.509, b) IPsec, c) TLS, d) IETF, e) MD5, f) RSA",
+        "answer": "a) X.509"
+    },
+    {
+        "question": "To allow confidential access to web sites using HTTPS, web browsers most often use (select one from): a) IPsec, b) TLS, c) MD5, d) SSH, e) SHA-1, f) None of the above",
+        "answer": "b) TLS"
+    },
+    {
+        "question": "Using symmetric key encryption to successfully provide authentication relies upon (select one from): a) The sender encrypting with a private key, b) The sender encrypting with a public key, c) The sender sending an encrypted copy of the shared secret key, d) The recipient being able to identify messages encrypted with the wrong key, e) The recipient being able to make their shared secret key public, f) The recipient being able to perform a hash operation on the received ciphertext",
+        "answer": "d) The recipient being able to identify messages encrypted with the wrong key"
+    },
+    {
+        "question": "A DoS makes a system (network and/or computers) unavailable for normal users to use. Explain how the ICMP attack achieves this, including what does it make “unavailable”",
+        "answer": "The ICMP attack uses up network capacity leading up to the Target (or the network of the Target), thereby making that network capacity unavailable. In addition, the processing of ICMP ECHO replies may use up processing (CPU) capacity of the Target, making that host unavailable"
+    },
+    {
+        "question": "Explain the difference between a direct DDoS attack and a reflector DDoS attack",
+        "answer": "A direct DDoS attack involves hosts under the control of the attacker directly performing an attack (by sending messages) on a target. A reflector DDoS attack involves hosts under control sending messages to uncontrolled (normal) hosts in the network, that then perform an attack on the target"
+    },
+    {
+        "question": "State two advantages of a reflector DDoS attack (compared to direct DDoS attack).",
+        "answer": "1. Potential of many more nodes participating in the attack, since the attacker can use uninfected nodes. 2. Harder for target to identify the attacker because traffic comes from many random uninfected nodes."
+    },
+    {
+        "question": "Describe the one-way property of hash functions.",
+        "answer": "Computationally hard to compute the inverse of a hash function"
+    },
+    {
+        "question": "Describe the weak collision resistance property of hash functions",
+        "answer": "Given a message X and its hash value A (H(X) = A), computationally hard to find another message Y such that H(X) = H(Y) = A."
+    },
+    {
+        "question": "Describe the strong collision resistance property of hash functions.",
+        "answer": "Computationally hard to find two messages, X and Y, such that their hash values are the same, i.e. H(X) = H(Y)."
+    },
+    {
+        "question": "Explain why MAC-based authentication cannot be used as a digital signature.",
+        "answer": "A MAC function uses a shared secret key. A message authenticated with a MAC function confirms that the message was generated by either the of the parties that has the secret. It does not confirm which of the two parties generated the message (which is the purpose of a digital signature)."
+    },
+    {
+        "question": "Describe two advantages of using tunneling mode (versus transport mode) of IPsec.",
+        "answer": "IPsec only needs to be configured on routers, not on all PCs; hide the IP addresses of the originating and destination nodes."
+    }
+]
